@@ -12,11 +12,11 @@ export default function Hero() {
           width={"100%"}
           height={"100%"}
           colors={["#90dfd2", "#00b4cc", "#194067", "#194067"]}
-          distortion={0.6}
+          distortion={0.7}
           swirl={0.63}
           grainMixer={0}
           grainOverlay={0}
-          speed={0.1}
+          speed={0.2}
           rotation={108}
           offsetX={-0.52}
           offsetY={-0.26}
@@ -38,10 +38,7 @@ export default function Hero() {
         </div>
 
         {/* Title */}
-        <h1
-          className='font-display text-7xl md:text-8xl lg:text-9xl tracking-tight text-white animate-fade-up delay-200'
-          style={{ fontStyle: "italic" }}
-        >
+        <h1 className='font-display italic text-7xl md:text-8xl lg:text-9xl tracking-tight text-white animate-fade-up delay-200'>
           Deeply
         </h1>
 
@@ -49,11 +46,6 @@ export default function Hero() {
         <p className='font-body text-lg md:text-xl tracking-[0.35em] uppercase text-white/70 mt-6 animate-fade-up delay-400 font-light'>
           listen with intention
         </p>
-
-        {/* Scroll indicator */}
-        {/* <div className='absolute bottom-10 animate-fade-in delay-700'>
-          <div className='w-px h-16 bg-gradient-to-b from-transparent via-white/40 to-transparent' />
-        </div> */}
       </div>
 
       {/* Bottom vignette */}
