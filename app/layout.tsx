@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, DM_Sans } from "next/font/google";
+import { Inria_Serif, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const instrumentSerif = Instrument_Serif({
+const inriaSerif = Inria_Serif({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: "400",
+  weight: ["300", "400", "700"],
+  style: ["normal", "italic"],
 });
 
 const dmSans = DM_Sans({
@@ -16,7 +17,12 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Deeply — Podcast App",
-  description: "Listen with intention. A podcast app for intentional listening.",
+  description:
+    "Listen with intention. A podcast app for intentional listening.",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
 };
 
 export default function RootLayout({
@@ -25,10 +31,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${instrumentSerif.variable} ${dmSans.variable} antialiased`}
-      >
+    <html lang='en'>
+      <body className={`${inriaSerif.variable} ${dmSans.variable} antialiased`}>
         {children}
       </body>
     </html>
