@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inria_Serif, DM_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -15,13 +15,41 @@ const dmSans = DM_Sans({
   weight: ["300", "400", "500", "600"],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#060d18",
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://deeply.ca"),
   title: "Deeply — Podcast App",
   description:
-    "Listen with intention. A podcast app for intentional listening.",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
+    "Listen with intention. Care for your curiosity, your time, and your attention.",
+  keywords: [
+    "podcast app",
+    "intentional listening",
+    "mindful listening",
+    "podcast player",
+    "podcast notes",
+    "focus listening",
+  ],
+  authors: [{ name: "Deeply" }],
+  creator: "Deeply",
+  publisher: "Deeply",
+  openGraph: {
+    type: "website",
+    siteName: "Deeply",
+    locale: "en_CA",
+    title: "Deeply — Podcast App",
+    description:
+      "Listen with intention. Care for your curiosity, your time, and your attention.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Deeply — Podcast App",
+    description:
+      "Listen with intention. Care for your curiosity, your time, and your attention.",
   },
 };
 
