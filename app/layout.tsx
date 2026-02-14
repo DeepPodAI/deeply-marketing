@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inria_Serif, DM_Sans } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const inriaSerif = Inria_Serif({
   variable: "--font-display",
@@ -62,6 +63,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${inriaSerif.variable} ${dmSans.variable} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
