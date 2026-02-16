@@ -5,6 +5,13 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
+    console.log('Environment check:', {
+      hasApiKey: !!process.env.RESEND_API_KEY,
+      hasToEmail: !!process.env.NOTIFICATION_EMAIL_TO,
+      hasCcEmail: !!process.env.NOTIFICATION_EMAIL_CC,
+      hasFromEmail: !!process.env.NOTIFICATION_FROM_EMAIL,
+    });
+
     const { email } = await request.json();
 
     // Validate email format
@@ -22,7 +29,7 @@ export async function POST(request: Request) {
     });
 
     if (contactError) {
-      console.error('Resend contact creation error:', contactError);
+      console.error('Resend contact creation error:', JSON.stringify(contactError, null, 2));
       return NextResponse.json(
         { error: 'Failed to add email to waitlist. Please try again.' },
         { status: 500 }
@@ -39,7 +46,7 @@ export async function POST(request: Request) {
     const { error: emailError } = await resend.emails.send({
       from: process.env.NOTIFICATION_FROM_EMAIL as string,
       to: process.env.NOTIFICATION_EMAIL_TO as string,
-      cc: process.env.NOTIFICATION_EMAIL_CC as string,
+      // cc: process.env.NOTIFICATION_EMAIL_CC as string,
       subject: `New waitlist signup: ${email}`,
       html: `
         <div style="font-family: system-ui, -apple-system, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
@@ -60,7 +67,7 @@ export async function POST(request: Request) {
     });
 
     if (emailError) {
-      console.error('Resend email notification error:', emailError);
+      console.error('Resend email notification error:', JSON.stringify(emailError, null, 2));
       // Don't fail the request if notification fails - contact was still created
     }
 
@@ -70,6 +77,7 @@ export async function POST(request: Request) {
     );
   } catch (error) {
     console.error('Waitlist API error:', error);
+    console.error('Error details:', error instanceof Error ? error.message : String(error));
     return NextResponse.json(
       { error: 'An unexpected error occurred. Please try again.' },
       { status: 500 }
