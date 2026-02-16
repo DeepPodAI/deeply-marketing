@@ -69,7 +69,7 @@ export default function Team() {
                 href={member.linkedin}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='inline-flex items-center gap-1.5 text-xs text-accent-muted/60 hover:text-accent transition-colors duration-300'
+                className='inline-flex items-center gap-1.5 text-sm text-accent-muted/80 hover:text-accent transition-colors duration-300'
               >
                 <svg
                   className='w-3.5 h-3.5'
