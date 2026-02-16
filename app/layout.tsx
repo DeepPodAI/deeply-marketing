@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 
 function getSiteUrl(): string {
   // Use SITE_URL environment variable, fallback to preview URL
-  return process.env.SITE_URL || 'https://deeply-marketing.vercel.app';
+  return process.env.SITE_URL || "https://deeply-marketing.vercel.app";
 }
 
 export const metadata: Metadata = {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
       "Listen with intention. Care for your curiosity, your time, and your attention.",
     images: [
       {
-        url: "/deeply-diver.png",
+        url: "/web-app-manifest-192x192.png",
         width: 1480,
         height: 2564,
         type: "image/png",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
       "Listen with intention. Care for your curiosity, your time, and your attention.",
     images: [
       {
-        url: "/deeply-diver.png",
+        url: "/web-app-manifest-192x192.png",
         alt: "Deeply — listen with intention",
       },
     ],

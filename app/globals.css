@@ -135,6 +135,17 @@ body {
   }
 }
 
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -153,6 +164,10 @@ body {
 
 .animate-gentle-bounce {
   animation: gentle-bounce 3.5s ease-in-out infinite;
+}
+
+.animate-diver-intro {
+  animation: fade-down 0.8s ease-out 0.5s both, gentle-bounce 3.5s ease-in-out 1.3s infinite;
 }
 
 .animate-fade-up {

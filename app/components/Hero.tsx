@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Content */}
       <div className='relative z-20 flex flex-col items-center text-center px-6'>
         {/* Diver illustration */}
-        <div className='animate-gentle-bounce mb-8'>
+        <div className='animate-diver-intro mb-8'>
           <Image
             src='/deeply-diver.png'
             alt='Deeply diver illustration'
