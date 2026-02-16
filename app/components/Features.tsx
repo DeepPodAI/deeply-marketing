@@ -1,3 +1,5 @@
+import { AuroraText } from "@/components/ui/aurora-text";
+
 export default function Features() {
   return (
     <section className='relative py-28 md:py-36 px-6 overflow-hidden'>
@@ -14,7 +16,9 @@ export default function Features() {
 
       <div className='relative z-10 max-w-5xl mx-auto'>
         <h2 className='font-display italic text-4xl md:text-5xl lg:text-6xl text-white text-center tracking-tight mb-20'>
-          Dive into what matters
+          <AuroraText colors={["#90dfd2", "#00b4cc", "#194067", "#194067"]}>
+            Dive into what matters
+          </AuroraText>
         </h2>
 
         <div className='grid md:grid-cols-3 gap-10 md:gap-14'>

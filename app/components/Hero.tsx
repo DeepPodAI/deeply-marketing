@@ -24,7 +24,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className='relative z-10 flex flex-col items-center text-center px-6'>
+      <div className='relative z-20 flex flex-col items-center text-center px-6'>
         {/* Diver illustration */}
         <div className='animate-gentle-bounce mb-8'>
           <Image
@@ -38,18 +38,18 @@ export default function Hero() {
         </div>
 
         {/* Title */}
-        <h1 className='font-display italic text-7xl md:text-8xl lg:text-9xl tracking-tight text-white animate-fade-up delay-200'>
+        <h1 className='font-display italic text-7xl md:text-8xl lg:text-9xl tracking-tight text-white/70 animate-fade-up delay-200'>
           Deeply
         </h1>
 
         {/* Subtitle */}
-        <p className='font-body text-lg md:text-xl tracking-[0.35em] uppercase text-white/70 mt-6 animate-fade-up delay-400 font-light'>
+        <p className='font-body text-lg md:text-xl tracking-[0.35em] uppercase text-white/50 mt-6 animate-fade-up delay-400 font-light'>
           listen with intention
         </p>
       </div>
 
       {/* Bottom vignette */}
-      <div className='absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none' />
+      <div className='absolute bottom-0 left-0 right-0 h-full bg-linear-to-t from-background to-transparent z-10 pointer-events-none' />
     </section>
   );
 }

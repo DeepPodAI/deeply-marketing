@@ -45,12 +45,14 @@ export const metadata: Metadata = {
     title: "Deeply — Podcast App",
     description:
       "Listen with intention. Care for your curiosity, your time, and your attention.",
+    images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Deeply — Podcast App",
     description:
       "Listen with intention. Care for your curiosity, your time, and your attention.",
+    images: ["/opengraph-image"],
   },
 };
 
