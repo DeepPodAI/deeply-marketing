@@ -22,8 +22,13 @@ export const viewport: Viewport = {
   themeColor: "#060d18",
 };
 
+function getSiteUrl(): string {
+  // Use SITE_URL environment variable, fallback to preview URL
+  return process.env.SITE_URL || 'https://deeply-marketing.vercel.app';
+}
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://deeply.ca"),
+  metadataBase: new URL(getSiteUrl()),
   title: "Deeply — listen with intention",
   description:
     "Listen with intention. Care for your curiosity, your time, and your attention.",
