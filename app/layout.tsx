@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://deeply.ca"),
-  title: "Deeply — Podcast App",
+  title: "Deeply — listen with intention",
   description:
     "Listen with intention. Care for your curiosity, your time, and your attention.",
   keywords: [
@@ -42,17 +42,30 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Deeply",
     locale: "en_CA",
-    title: "Deeply — Podcast App",
+    title: "Deeply — listen with intention",
     description:
       "Listen with intention. Care for your curiosity, your time, and your attention.",
-    images: ["/opengraph-image"],
+    images: [
+      {
+        url: "/deeply-diver.png",
+        width: 1480,
+        height: 2564,
+        type: "image/png",
+        alt: "Deeply — listen with intention",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Deeply — Podcast App",
+    title: "Deeply — listen with intention",
     description:
       "Listen with intention. Care for your curiosity, your time, and your attention.",
-    images: ["/opengraph-image"],
+    images: [
+      {
+        url: "/deeply-diver.png",
+        alt: "Deeply — listen with intention",
+      },
+    ],
   },
 };
 
