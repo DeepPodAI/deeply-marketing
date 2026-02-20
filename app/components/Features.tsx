@@ -17,7 +17,7 @@ export default function Features() {
       <div className='relative z-10 max-w-5xl mx-auto'>
         <h2 className='font-display italic text-4xl md:text-5xl lg:text-6xl text-white text-center tracking-tight mb-20'>
           <AuroraText colors={["#90dfd2", "#00b4cc", "#194067", "#194067"]}>
-            Dive into what matters
+            Why we&apos;re building this
           </AuroraText>
         </h2>
 
@@ -26,12 +26,10 @@ export default function Features() {
           <div className='group text-center md:text-left'>
             <div className='w-12 h-px bg-accent mb-6 mx-auto md:mx-0 transition-all group-hover:w-20 group-hover:bg-white' />
             <h3 className='font-display italic text-2xl text-white mb-4'>
-              Mindful Queue
+              Respect your attention
             </h3>
             <p className='text-white/60 text-sm leading-relaxed font-light'>
-              Build a listening queue that reflects your intentions, not an
-              algorithm&apos;s agenda. Set your pace, mark episodes for deep
-              focus, and let silence be part of the experience.
+              Your attention is finite and precious. Deeply treats it that way.
             </p>
           </div>
 
@@ -39,12 +37,10 @@ export default function Features() {
           <div className='group text-center md:text-left'>
             <div className='w-12 h-px bg-accent mb-6 mx-auto md:mx-0 transition-all group-hover:w-20 group-hover:bg-white' />
             <h3 className='font-display italic text-2xl text-white mb-4'>
-              Deep Notes
+              See what shapes you
             </h3>
             <p className='text-white/60 text-sm leading-relaxed font-light'>
-              Capture thoughts as you listen with timestamped notes that live
-              alongside each episode. Revisit your reflections weeks later and
-              watch your ideas evolve.
+              Understand the ideas and voices that influence how you think.
             </p>
           </div>
 
@@ -52,12 +48,11 @@ export default function Features() {
           <div className='group text-center md:text-left'>
             <div className='w-12 h-px bg-accent mb-6 mx-auto md:mx-0 transition-all group-hover:w-20 group-hover:bg-white' />
             <h3 className='font-display italic text-2xl text-white mb-4'>
-              Focus Sessions
+              Less noise, more depth
             </h3>
             <p className='text-white/60 text-sm leading-relaxed font-light'>
-              Block out distractions with a dedicated listening mode that dims
-              notifications and tracks your listening streaks. Commit to being
-              present with every episode.
+              We&apos;re not adding to the flood. We&apos;re helping you
+              navigate it.
             </p>
           </div>
         </div>
