@@ -45,7 +45,7 @@ export default function Team() {
         </p>
 
         {/* Team grid */}
-        <div className='grid md:grid-cols-3 gap-12 md:gap-10'>
+        <div className='grid md:grid-cols-2 gap-12 md:gap-10'>
           {members.map((member) => (
             <div key={member.name} className='group text-center'>
               <div className='relative w-24 h-24 mx-auto mb-6'>
