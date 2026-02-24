@@ -13,12 +13,12 @@ const members = [
     image: "/Dana.webp",
     linkedin: "https://www.linkedin.com/in/danacreativetechnology/",
   },
-  {
-    name: "Ben Wozak",
-    role: "Concepting & Programming",
-    image: "/Ben.webp",
-    linkedin: "https://www.linkedin.com/in/ben-wozak/",
-  },
+  // {
+  //   name: "Ben Wozak",
+  //   role: "Concepting & Programming",
+  //   image: "/Ben.webp",
+  //   linkedin: "https://www.linkedin.com/in/ben-wozak/",
+  // },
 ];
 
 export default function Team() {
