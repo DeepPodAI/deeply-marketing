@@ -46,7 +46,7 @@ export async function POST(request: Request) {
     const { error: emailError } = await resend.emails.send({
       from: process.env.NOTIFICATION_FROM_EMAIL as string,
       to: process.env.NOTIFICATION_EMAIL_TO as string,
-      // cc: process.env.NOTIFICATION_EMAIL_CC as string,
+      cc: process.env.NOTIFICATION_EMAIL_CC?.split(',') as string[],
       subject: `New waitlist signup: ${email}`,
       html: `
         <div style="font-family: system-ui, -apple-system, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
